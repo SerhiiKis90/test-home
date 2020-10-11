@@ -1,9 +1,9 @@
-/*-------------------Common STYLES-------------------------*/
+/*----------------Common STYLES-------------------*/
 
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+
 }
 
 
@@ -12,3 +12,518 @@ body {
     font-weight: 400;
 }
 
+.container{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.menu-button {
+    display:none;
+}
+
+/*-------------------HEADER------------------------*/
+
+nav {
+	display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.links ul{
+    list-style-type: none;
+    padding-top: 68px;
+}
+
+.links ul li{
+	display: inline;
+    margin-left:50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.links ul a{
+	text-decoration: none;
+}
+
+.logo img {
+    width:100%;
+    height: auto;
+}
+
+/*-------------------Input page-------------------*/
+
+.input-page {
+    width: 100%;
+	background-image:url(../img/background.png);
+	background-size: cover;
+    color:white; 
+    text-align: center;
+    padding-bottom: 320px;
+}
+
+.input-page .container {
+    padding-top: 263px;
+}
+
+.motto h1 {
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+}
+
+.motto p {
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.input-field input {
+    width: 542px;
+    padding: 24px 0px 24px 20px;
+    font-size: 16px;
+}
+
+.input-field input::placeholder {
+    color: #bdbdbd;
+}
+
+.input-field input,button:focus{
+    outline:none;
+}
+
+
+
+.input-field button {
+    font-size: 18px ;
+    background-color: #f26522;
+    color:white;
+    border: none;
+    padding: 24px 27px 25px 28px;
+}
+
+.input-field button:hover {
+    cursor: pointer;
+}
+
+.form {
+    display: inline-block;
+    border: 21px solid #7b3512;
+}
+
+
+/*-------------------Features page-------------------*/
+
+.features {
+    text-align: center;
+    padding-top:100px;
+}
+
+.features-header {
+    padding-bottom: 60px;
+}
+
+.features-header h1 {
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.cardholder {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:100px;
+    flex-wrap: wrap;
+}
+
+.card:not(:first-child){
+    margin-left:32px;
+}
+
+.card {
+    padding:47px 25px 50px 35px;
+    box-shadow: 0 0 20px #e8f8ff;
+    flex: 1 1 0px;
+}
+
+.card img {
+    padding-bottom: 35px;
+}
+
+.card h2 {
+    padding-bottom: 20px;
+    font-size: 24px;
+    color: #f26522;
+    font-weight: 700;
+}
+
+
+/*-------------------Steps page-------------------*/
+
+.steps {
+    text-align: center;
+    width: 100%;
+	background-image:url(../img/background-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.steps-header {
+    padding-top:100px;
+    padding-bottom: 50px;
+}
+
+.steps-header h1 {
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.steps .card  {
+    box-shadow: 0 0 20px #daeef6;  
+    padding:63px 39px 71px 39px;
+    flex: 1 1 0px;
+    background-color: white;
+}
+
+
+.steps .card h1 {
+    font-size: 36px;
+    padding-bottom: 35px;
+}
+
+.steps .card h2 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+
+.steps .container {
+    margin-bottom:72px;
+}
+
+.video img {
+    width: 70%;
+    height: auto;
+}
+
+
+/*-------------------List page-------------------*/
+table {
+    border-collapse: separate;
+    border-spacing: 9px 1px ;
+    padding-bottom:338px;
+  }
+
+.list table td {
+    background-color: #f26522;
+    color:white;
+    padding: 20px 37px 25px 28px;
+    font-size: 16px;
+    width: 33.333%
+}
+
+.list table td span {
+    padding-left:42px;
+}
+
+.list table tr {
+    margin-left:9px;
+}
+
+.list table td img {
+    vertical-align: middle;
+    padding-right:17px;
+}
+
+
+/*-------------------Subscribe page-------------------*/
+
+.subscribe {
+    width: 100%;
+	background-image:url(../img/background-subscribe.png);
+	background-size: cover;
+    padding-top: 145px;
+    text-align: center;
+    color: #f2f2f2;
+    padding-bottom: 175px;
+}
+
+.subscribe h1 {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.subscribe p {
+    padding-bottom: 45px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.subscribe input{
+    background-image: url(../img/icon-mail.png);
+    background-position: 20px 15px ; 
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    width: 620px;
+    padding: 25px 0px 28px 65px;
+    border:none;
+   }
+
+.subscribe button {
+    font-size: 18px ;
+    padding: 24px 55px 26px 60px;
+}
+
+.subscribe input:focus{
+    background-image:none;
+   }
+
+   /*-------------------Submit page-------------------*/
+
+   .submit-form {
+       padding-top:100px;
+    /*   background: url("../img/background-last-cut.png") 0% 100% no-repeat;*/
+       margin-bottom: 95px;
+       position: relative;
+   }
+
+   .submit-items {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   }
+
+   .instantly {
+    box-shadow: 0 0 20px #e8f8ff;
+    padding:60px 30px 108px 30px;
+    flex: 1 auto;
+   }
+
+   .instantly h1 {
+       font-size: 34px;
+       font-weight: 500;
+       color: #f26522;
+       padding-bottom: 28px;
+   }
+
+   .instantly p {
+       font-size: 20px;
+       font-weight: 700;
+       color: #707070;
+       padding-bottom: 54px;
+   }
+
+   .instantly input {
+       border: 2px solid #eff2f2;
+       padding:21px 190px 25px 22px; 
+       margin-bottom: 35px;
+   }
+
+   .instantly input::placeholder {
+    color:#bdbdbd;
+   }
+
+   .instantly button {
+       background-color: #f26522;
+       color:white;
+       text-align: center;
+       padding:20px 145px 20px 145px;
+       border:none;
+       font-size: 14px;
+       font-weight: 700;
+   }
+
+   .get-in {
+    box-shadow: 0 0 20px #e8f8ff;
+    margin-left:30px;
+    padding: 40px 30px 30px 30px;
+    flex: 1 auto;
+   }
+
+   .get-in h1 {
+       margin-bottom: 10px;
+   }
+
+   .get-in input {
+    width:610px;
+    padding:20px 0px 20px 16px;
+    margin-top:20px;
+    border: 2px solid #cff0ff;
+   }
+
+   .get-in input:nth-child(6){
+       padding-bottom: 175px;
+       color:red;
+   }
+
+   .get-in input::placeholder {
+    color:#b7b7b7;
+   }
+
+   .get-in button {
+       float: right;
+       text-align: center;
+       background-color: #f26522;
+       border:none;
+       padding:20px 55px 17px 55px;
+       font-size: 18px;
+       font-weight: 500;
+       color:white;
+       margin-top:30px;
+       margin-bottom: 30px;
+   }
+
+
+
+.background {
+    position: absolute;
+    top:752px;
+}
+
+.background img {
+    width:100%;
+    height: auto;
+}
+
+
+     /*-------------------Footer-------------------*/
+
+     footer{
+         background-color: #1e1e1e;
+     }
+
+     footer p {
+         color:#bdbdbd;
+         padding:42px 0;
+         text-align: center;
+     }
+
+
+     /*------------------------MEDIA-------------------------*/
+
+
+@media screen and (max-width: 730px) {
+
+    .get-in input {
+        width: 80%;
+    }
+
+    .instantly input {
+        padding:21px 0px 25px 22px; 
+        width: 80%;
+
+    }
+
+    .instantly button {
+        padding:20px 0px 20px 0px;
+        width: 80%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+
+   }
+
+   @media screen and (max-width: 1500px) {
+    .steps {
+        background-image:url(../img/background-1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+   }
+
+
+   @media screen and (max-width: 1181px) {
+       .submit-items {
+        flex-wrap: wrap;
+       }
+      .instantly {
+          text-align: center;
+      } 
+       .instantly input, button {
+           display:block;
+          
+           text-align: center;
+           margin: 0px auto;
+       }
+
+       .instantly input {
+           margin-bottom: 30px;
+       }
+
+      .list .container {
+        overflow-x:auto;
+      }
+
+      .get-in {
+          text-align: center;
+      }
+
+      .get-in input, button {
+        display:block;
+        margin: 0 auto;
+    }
+
+    .get-in input {
+        margin-bottom:20px;
+    }
+
+    .get-in button {
+        float:none;
+    }
+
+    .submit-form {
+        margin-bottom: 180px;
+    }
+
+    .background {
+        top: 1306px;
+    }
+    .nav {
+        justify-content: center;
+        align-items: center;
+    }
+    .form {
+        border:none;
+    }
+    .input-field input {
+        width: 80%;
+    }
+    .input-field button {
+        margin-top:10px;
+        padding: 5% 10%;
+        border: 2px solid rgb(175, 38, 33);
+    }
+    .subscribe input {
+        max-width: 80%;
+    }
+
+    table { 
+        width: 100%; 
+        padding-bottom: 40px;
+       
+      }
+
+    .submit input {
+        width:80%;
+    }  
+
+    .container .logo,.links {
+        align-items: center;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .background {
+        display: none;
+    }
+}
